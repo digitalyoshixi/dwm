@@ -1962,8 +1962,11 @@ updategeom(void)
 				dirty = 1;
 				m->clients = c->next;
 				detachstack(c);
-				c->mon = mons;
-				attach(c);
+				c->mon = mons;	
+				if( attachbelow )
+                                        attachBelow(c);
+                                else
+					attach(c);
 				attachstack(c);
 			}
 			if (m == selmon)
