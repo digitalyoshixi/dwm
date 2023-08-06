@@ -1,8 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const unsigned int gappx     = 6;        /* gap size between windows*/
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
+static const unsigned int gappx     = 8;        /* gap size between windows*/
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -22,7 +22,7 @@ static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_white, col_gray1, col_black },
-	[SchemeSel]  = { col_white, col_gray1,  col_seagreen  },
+	[SchemeSel]  = { col_white, col_seagreen,  col_seagreen  },
 };
 static const unsigned int alphas[][3]      = {
 	/*               fg      bg        border*/
